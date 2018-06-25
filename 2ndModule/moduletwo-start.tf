@@ -52,7 +52,7 @@ resource "aws_subnet" "subnet2" {
   availability_zone = "${data.aws_availability_zones.available.names[1]}"
 }
 ################################################################################
-#Routine
+#Routing
 ################################################################################
 
 resource "aws_route_table" "rtb" {
@@ -75,7 +75,7 @@ resource "aws_route_table_association" "rta-subnet2" {
 }
 
 ################################################################################
-#Security security
+#Security Groups
 ################################################################################
 #ELB Security Groups
 
